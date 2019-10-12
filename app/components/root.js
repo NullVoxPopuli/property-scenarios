@@ -6,6 +6,10 @@ export default class RootComponent extends Component {
   @tracked rootA = 0;
   @tracked rootB = 0;
 
+  get multiplied() {
+    return this.rootA * this.rootB;
+  }
+
   @action incrementA() {
     this.rootA++;
   }
