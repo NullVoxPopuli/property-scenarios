@@ -1,0 +1,13 @@
+<fieldset>
+  <legend>Root</legend>
+
+  rootA: {{this.rootA}}
+  <button {{on 'click' this.incrementA}}>rootA++</button>
+  <br>
+  rootB: {{this.rootB}}
+  <button {{on 'click' this.incrementB}}>rootB++</button>
+  <br>
+
+  <Doubler @number={{this.rootA}} />
+  <EmberFirstLevel @number={{this.rootB}} @onClick={{this.sqrt}}/>
+</fieldset>
